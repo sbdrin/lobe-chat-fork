@@ -1,4 +1,22 @@
 {
+  "clerkAuth": {
+    "loginSuccess": {
+      "action": "Continue session",
+      "desc": "{{greeting}}, it's great to continue serving you. Let's continue our previous conversation.",
+      "title": "Welcome back, {{nickName}}"
+    }
+  },
+  "error": {
+    "backHome": "Powrót do strony głównej",
+    "desc": "Spróbuj ponownie później lub wróć do znanego świata",
+    "retry": "Ponów próbę",
+    "title": "Napotkano problem na stronie.."
+  },
+  "notFound": {
+    "backHome": "Powrót do strony głównej",
+    "desc": "Nie możemy odnaleźć strony, której szukasz. Sprawdź, czy link jest poprawny.",
+    "title": "Wkraczasz w nieznane terytorium?"
+  },
   "pluginSettings": {
     "desc": "Wykonaj poniższą konfigurację, aby rozpocząć korzystanie z tego wtyczki",
     "title": "Konfiguracja wtyczki {{name}}"
@@ -37,12 +55,15 @@
     "AnthropicBizError": "Wystąpił błąd biznesowy podczas żądania usługi Anthropic AI. Sprawdź poniższe informacje i spróbuj ponownie.",
     "AzureBizError": "Wystąpił błąd żądania usługi Azure AI, prosimy o sprawdzenie poniższych informacji lub ponowne próbowanie.",
     "BedrockBizError": "Wystąpił błąd żądania usługi Bedrock, prosimy o sprawdzenie poniższych informacji lub ponowne próbowanie.",
+    "DeepSeekBizError": "Błąd biznesowy podczas żądania usługi DeepSeek. Sprawdź poniższe informacje lub spróbuj ponownie.",
     "GoogleBizError": "Wystąpił błąd żądania usługi Google, prosimy o sprawdzenie poniższych informacji lub ponowne próbowanie.",
     "GroqBizError": "Wystąpił błąd usługi Groq. Sprawdź poniższe informacje lub spróbuj ponownie.",
     "InvalidAccessCode": "Nieprawidłowy kod dostępu: Hasło jest nieprawidłowe lub puste. Proszę wprowadzić poprawne hasło dostępu lub dodać niestandardowy klucz API.",
     "InvalidAnthropicAPIKey": "Anthropic API Key jest nieprawidłowy lub pusty. Sprawdź poprawność klucza API Anthropic i spróbuj ponownie.",
     "InvalidAzureAPIKey": "Nieprawidłowy lub pusty klucz API Azure, prosimy sprawdzić klucz API Azure i spróbować ponownie.",
     "InvalidBedrockCredentials": "Uwierzytelnienie Bedrock nie powiodło się, prosimy sprawdzić AccessKeyId/SecretAccessKey i spróbować ponownie.",
+    "InvalidClerkUser": "Przepraszamy, nie jesteś obecnie zalogowany. Proszę najpierw zalogować się lub zarejestrować, aby kontynuować.",
+    "InvalidDeepSeekAPIKey": "Klucz API DeepSeek jest nieprawidłowy lub pusty. Sprawdź klucz API DeepSeek i spróbuj ponownie.",
     "InvalidGoogleAPIKey": "Nieprawidłowy lub pusty klucz API Google, prosimy sprawdzić klucz API Google i spróbować ponownie.",
     "InvalidGroqAPIKey": "Nieprawidłowy klucz API Groq, prosimy sprawdzić klucz API Groq i spróbować ponownie.",
     "InvalidMinimaxAPIKey": "Nieprawidłowy lub pusty klucz API Minimax, proszę sprawdzić klucz API Minimax i spróbować ponownie",
