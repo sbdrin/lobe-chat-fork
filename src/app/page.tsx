@@ -5,6 +5,10 @@ import { getCanonicalUrl } from '@/const/url';
 import Client from './(loading)/Client';
 import Redirect from './(loading)/Redirect';
 
+export const metadata: Metadata = {
+  alternates: { canonical: getCanonicalUrl('/') },
+};
+
 const Page = () => {
   return (
     <>
@@ -14,8 +18,6 @@ const Page = () => {
   );
 };
 
-export default Page;
+Page.displayName = 'Loading';
 
-export const metadata: Metadata = {
-  alternates: { canonical: getCanonicalUrl('/') },
-};
+export default Page;

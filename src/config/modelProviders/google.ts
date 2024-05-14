@@ -22,6 +22,7 @@ const Google: ModelProviderCard = {
       description: 'The best model for scaling across a wide range of tasks',
       displayName: 'Gemini 1.0 Pro',
       enabled: true,
+      functionCall: true,
       id: 'gemini-pro',
       maxOutput: 2048,
       tokens: 30_720 + 2048,
@@ -47,7 +48,16 @@ const Google: ModelProviderCard = {
       description:
         'The best model for scaling across a wide range of tasks. This is a stable model that supports tuning.',
       displayName: 'Gemini 1.0 Pro 001 (Tuning)',
+      functionCall: true,
       id: 'gemini-1.0-pro-001',
+      maxOutput: 2048,
+      tokens: 30_720 + 2048,
+    },
+    {
+      description:
+        'The best model for scaling across a wide range of tasks. Released April 9, 2024.',
+      displayName: 'Gemini 1.0 Pro 002 (Tuning)',
+      id: 'gemini-1.0-pro-002',
       maxOutput: 2048,
       tokens: 30_720 + 2048,
     },
@@ -63,6 +73,7 @@ const Google: ModelProviderCard = {
       description: 'Mid-size multimodal model that supports up to 1 million tokens',
       displayName: 'Gemini 1.5 Pro',
       enabled: true,
+      functionCall: true,
       id: 'gemini-1.5-pro-latest',
       maxOutput: 8192,
       tokens: 1_048_576 + 8192,

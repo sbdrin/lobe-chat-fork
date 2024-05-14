@@ -1,18 +1,12 @@
-'use client';
+import { metadataModule } from '@/server/metadata';
+import { translation } from '@/server/translation';
 
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-
-import PageTitle from '@/components/PageTitle';
-
-import TTS from './TTS';
-
-export default memo(() => {
-  const { t } = useTranslation('setting');
-  return (
-    <>
-      <PageTitle title={t('tab.tts')} />
-      <TTS />
-    </>
-  );
-});
+export const generateMetadata = async () => {
+  const { t } = await translation('setting');
+  return metadataModule.generate({
+    description: t('header.desc'),
+    title: t('tab.tts'),
+    url: '/settings/tts',
+  });
+};
+export { default } from './index';
