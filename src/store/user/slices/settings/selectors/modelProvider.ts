@@ -13,27 +13,27 @@ import { currentSettings, getProviderConfigById } from './settings';
  */
 const serverProviderModelCards =
   (provider: GlobalLLMProviderKey) =>
-  (s: UserStore): ChatModelCard[] | undefined => {
-    const config = s.serverConfig.languageModel?.[provider] as
-      | ServerModelProviderConfig
-      | undefined;
+    (s: UserStore): ChatModelCard[] | undefined => {
+      const config = s.serverConfig.languageModel?.[provider] as
+        | ServerModelProviderConfig
+        | undefined;
 
-    if (!config) return;
+      if (!config) return;
 
-    return config.serverModelCards;
-  };
+      return config.serverModelCards;
+    };
 
 const remoteProviderModelCards =
   (provider: GlobalLLMProviderKey) =>
-  (s: UserStore): ChatModelCard[] | undefined => {
-    const cards = currentSettings(s).languageModel?.[provider]?.remoteModelCards as
-      | ChatModelCard[]
-      | undefined;
+    (s: UserStore): ChatModelCard[] | undefined => {
+      const cards = currentSettings(s).languageModel?.[provider]?.remoteModelCards as
+        | ChatModelCard[]
+        | undefined;
 
-    if (!cards) return;
+      if (!cards) return;
 
-    return cards;
-  };
+      return cards;
+    };
 
 const isProviderEnabled = (provider: GlobalLLMProviderKey) => (s: UserStore) =>
   getProviderConfigById(provider)(s)?.enabled || false;
@@ -71,16 +71,16 @@ const getDefaultModelCardById = (id: string) => (s: UserStore) => {
 
 const getModelCardsById =
   (provider: string) =>
-  (s: UserStore): ChatModelCard[] => {
-    const builtinCards = getDefaultModeProviderById(provider)(s)?.chatModels || [];
+    (s: UserStore): ChatModelCard[] => {
+      const builtinCards = getDefaultModeProviderById(provider)(s)?.chatModels || [];
 
-    const userCards = (getProviderConfigById(provider)(s)?.customModelCards || []).map((model) => ({
-      ...model,
-      isCustom: true,
-    }));
+      const userCards = (getProviderConfigById(provider)(s)?.customModelCards || []).map((model) => ({
+        ...model,
+        isCustom: true,
+      }));
 
-    return uniqBy([...userCards, ...builtinCards], 'id');
-  };
+      return uniqBy([...userCards, ...builtinCards], 'id');
+    };
 
 const getEnableModelsById = (provider: string) => (s: UserStore) => {
   if (!getProviderConfigById(provider)(s)?.enabledModels) return;
@@ -110,7 +110,8 @@ const isModelEnabledFunctionCall = (id: string) => (s: UserStore) =>
 // vision model white list, these models will change the content from string to array
 // refs: https://github.com/lobehub/lobe-chat/issues/790
 const isModelEnabledVision = (id: string) => (s: UserStore) =>
-  getModelCardById(id)(s)?.vision || id.includes('vision');
+  getModelCardById(id)(s)?.vision || id.includes('vision') || id.includes('4o');
+
 
 const isModelEnabledFiles = (id: string) => (s: UserStore) => getModelCardById(id)(s)?.files;
 
