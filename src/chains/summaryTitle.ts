@@ -20,11 +20,11 @@ export const chainSummaryTitle = async (
     },
   ];
   // 如果超过 16k，则使用 GPT-4-turbo 模型
-  const tokens = await chatHelpers.getMessagesTokenCount(finalMessages);
   let model: string | undefined = 'gpt-3.5-turbo-0125';
-  if (tokens > 16000) {
-    model = 'gpt-4-turbo-preview';
-  }
+  // const tokens = await chatHelpers.getMessagesTokenCount(finalMessages);
+  // if (tokens > 8000) {
+  //   model = 'gpt-4-turbo-preview';
+  // }
 
   return {
     messages: finalMessages,
