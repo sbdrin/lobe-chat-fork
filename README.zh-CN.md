@@ -250,14 +250,14 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 <!-- AGENT LIST -->
 
-| 最近新增                                                                                                                                                                    | 助手说明                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| [Bahasa/English Translator](https://chat-preview.lobehub.com/market?agent=bahasa-translation)<br/><sup>By **[xenstar](https://github.com/xenstar)** on **2024-05-22**</sup> | 根据需要将文本翻译成马来语或英语<br/>`英语` `翻译` `写作` `马来语`               |
-| [禅定法师](https://chat-preview.lobehub.com/market?agent=buddhism-master)<br/><sup>By **[epochaudio](https://github.com/epochaudio)** on **2024-05-22**</sup>               | 熟读经典，善于运用佛法来指导人生<br/>`佛法佛法研究` `禅宗` `佛经解读` `智慧问答` |
-| [中国历史学者](https://chat-preview.lobehub.com/market?agent=chinese-historian)<br/><sup>By **[epochaudio](https://github.com/epochaudio)** on **2024-05-22**</sup>         | 专精于中国历史研究，擅长将古代智慧应用于现代问题分析<br/>`历史研究` `中国历史`   |
-| [儒家学者](https://chat-preview.lobehub.com/market?agent=confucian-sage)<br/><sup>By **[epochaudio](https://github.com/epochaudio)** on **2024-05-22**</sup>                | 一名精通儒家经典且注重弘扬道义的学者<br/>`儒家学者` `道义弘扬者`                 |
+| 最近新增                                                                                                                                                            | 助手说明                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Dart/Flutter Dev](https://chat-preview.lobehub.com/market?agent=dart-flutter)<br/><sup>By **[rezmeplxrf](https://github.com/rezmeplxrf)** on **2024-05-28**</sup>  | Dart/Flutter 전문가. 3단계 이상 중첩하지 않음. 상태 관리에 riverpod, flutter_riverpod, riverpod_hook, flutter_hook 사용.<br/>`dart` `flutter` `개발` `상태-관리` `riverpod`     |
+| [C# .NET 技术专家](https://chat-preview.lobehub.com/market?agent=dotnet-expert)<br/><sup>By **[johnnyqian](https://github.com/johnnyqian)** on **2024-05-28**</sup> | C# .NET 技术专家<br/>`net` `developer` `net-core` `azure` `c` `microsoft` `sql-server` `entity-framework` `ef` `ef-core`                                                        |
+| [基督传教士](https://chat-preview.lobehub.com/market?agent=jesus-missionary)<br/><sup>By **[epochaudio](https://github.com/epochaudio)** on **2024-05-28**</sup>    | 作为一名耶稣传教士，我将依据圣经教导以启迪你对神的话语的理解和实际运用。无论是在困惑还是寻求灵性成长的过程中，我都在这智慧的源泉旁为你服务<br/>`圣经教学` `基督传教` `神学布道` |
+| [日常小助手](https://chat-preview.lobehub.com/market?agent=junior-helper)<br/><sup>By **[Qinks6](https://github.com/Qinks6)** on **2024-05-28**</sup>               | 一个能搜索、能画图的小可爱<br/>`助手` `搜索` `绘图` `信息查询` `用户交互`                                                                                                       |
 
-> 📊 Total agents: [<kbd>**269**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
+> 📊 Total agents: [<kbd>**280**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
 
  <!-- AGENT LIST -->
 
